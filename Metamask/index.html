@@ -1,0 +1,24 @@
+<html>
+     <head>
+          <tittle>Vanilla Boilerplate</title>
+          
+   </head>
+
+     <body>
+	 
+	 <h1>connect</h1>
+	 <br>
+	 <button class="enableEthereumButton">Enable Ethereum</button>
+	 <script>
+	 const ethereumButton = document.querySelector('.enableEthereumButton');
+
+ethereumButton.addEventListener('click', () => {
+  //Will Start the metamask extension
+  ethereum.request({ method: 'eth_requestAccounts' });
+});
+	 
+	 </script>
+
+          
+   </body>
+</html>
