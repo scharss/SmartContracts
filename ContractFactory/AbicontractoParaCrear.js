@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"string","name":"url","type":"string"}],"name":"storex","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"urlNFT","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"}]
