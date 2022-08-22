@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Ethers.js</title>
+    
+</head>
+<body>
+    <p><button onclick="connectMetamask()">Conectar</button></p>
+    <p><button onclick="getBalance()">Balance</button></p>
+    <p><button onclick="readDataFromSmartContract()">Leer contracto</button></p>
+	
+	<p>Asunto <input type="text" id="furl"></p>
+	<p>Descripción <input type="text" id="fdescrip"></p>
+	<p><button onclick="escribirenelContrato()">Firmar contracto</button></p>
+	<p><button onclick="getMyArray()">Ver Firmas</button></p>
+	<p id="demos1"></p>
+	<p id="demos"></p>
+    <br/>
+    
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+        <script src="index2.js"></script>
+    
+</body>
+</html>
