@@ -1,0 +1,26 @@
+
+.link{ 
+text-decoration: none;
+    color: white;
+	text-align: center;
+	font-size: 20px;
+	padding: 7px
+	} 
+	
+#lista1 li {
+     display:inline;
+     padding-left:3px;
+     padding-right:3px;
+   
+}
+
+.barra{
+	background-color: black;
+	padding: 30px;
+	 
+	
+}
+h2{
+	text-align: center;	
+	color: red;
+}
