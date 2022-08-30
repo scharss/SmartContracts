@@ -30,10 +30,13 @@ function getdata() public view returns(
 
    
 
-    function remove(uint id) public{
+    function removeData(uint id) public{
     arr[id] = arr[arr.length - 1];
     arr.pop();
   }
     
+
+
+
 
     }
