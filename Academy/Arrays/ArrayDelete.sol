@@ -4,17 +4,17 @@ pragma solidity ^0.8.16;
 
 contract MySmartContract{
     string[] public arr;
-    string public urlNFT;
+    string public dataStorage;
     
 
-    function storex(string memory url) public {
-        urlNFT = url;
+    function upData(string memory data) public {
+        dataStorage = data;
         
     }
-    function array_push(
+    function saveData(
     ) public returns(string[] memory){  
     
-        arr.push(urlNFT);  
+        arr.push(dataStorage);  
         	
         
     
@@ -28,15 +28,9 @@ function getdata() public view returns(
     }  
 
 
-   function getDelete(uint i) public {
-        delete arr[i];
-        
-    }
-    
+   
 
-
-
-
-
-
-    }
+    function remove(uint id) public{
+    arr[id] = arr[arr.length - 1];
+    arr.pop();
+  }
