@@ -34,3 +34,6 @@ function getdata() public view returns(
     arr[id] = arr[arr.length - 1];
     arr.pop();
   }
+    
+
+    }
