@@ -55,21 +55,21 @@ contract NftDriveFactory is Ownable {
  
 
      function create(address owner) public payable {
-       require(msg.value >= 100000000000000, "You need to spend more ETH!");
+       require(msg.value >= 10000000000000000, "You need to spend more ETH!");
         new NftDrive(owner);
         
     }
     
        
 
-    function withdrawMoney() public {
+    function withdrawMoney() public onlyOwner{
         address payable to = payable(msg.sender);
         to.transfer(getBalance());
     }
 
 
 
-      function getBalance() public view returns (uint256) {
+      function getBalance() public view  returns (uint256) {
         return address(this).balance;
     }
  
